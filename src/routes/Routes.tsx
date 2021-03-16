@@ -25,7 +25,7 @@ const Routes: React.FC<Props> = () => {
       <Route path="/orders" component={OrderRoutes} />
       <Route path="/admin" component={AdminRoutes} />
 
-      <Route path="/products/:id" component={ProductDetail} />
+      <Route path="/products/:productId" component={ProductDetail} />
       <Route path="/products" component={Products} />
 
       <Route path="*" component={PageNotFound} />
