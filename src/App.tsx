@@ -9,14 +9,15 @@ import Routes from './routes/Routes';
 import GlobalStyle from './theme/globalStyle';
 
 // Components
-import Header from './components/layout/header/Header';
+import Layout from './components/layout/layout/Layout';
 
 function App() {
   return (
     <HashRouter>
       <GlobalStyle />
-      <Header />
-      <Routes />
+      <Layout>
+        <Routes />
+      </Layout>
     </HashRouter>
   );
 }
