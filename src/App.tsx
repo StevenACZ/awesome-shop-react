@@ -1,15 +1,23 @@
+// React
 import React from 'react';
+
+// React Router
 import { HashRouter } from 'react-router-dom';
-import './App.css';
 import Routes from './routes/Routes';
+
+// Styles
+import GlobalStyle from './theme/globalStyle';
+
+// Components
+import Header from './components/layout/header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <HashRouter>
-        <Routes />
-      </HashRouter>
-    </div>
+    <HashRouter>
+      <GlobalStyle />
+      <Header />
+      <Routes />
+    </HashRouter>
   );
 }
 
