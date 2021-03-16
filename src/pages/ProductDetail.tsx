@@ -7,6 +7,10 @@ import { useParams } from 'react-router';
 // Data & Interface
 import { products, Product } from '../data/products';
 
+// Components
+import PageNotFound from './PageNotFound';
+import ProductHero from '../components/product-hero/ProductHero';
+
 interface Props {}
 
 const ProductDetail: React.FC<Props> = () => {
@@ -19,8 +23,13 @@ const ProductDetail: React.FC<Props> = () => {
     setProduct(prod);
   }, [params]);
 
-  console.log(product);
-  return <div>ProductDetail</div>;
+  if (!product) return <PageNotFound />;
+
+  return (
+    <>
+      <ProductHero {...product} />
+    </>
+  );
 };
 
 export default ProductDetail;
