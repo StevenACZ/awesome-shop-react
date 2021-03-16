@@ -3,6 +3,7 @@ import { color } from '../../../theme/variables';
 
 export const HeaderStyled = styled.header`
   display: flex;
+  padding: 0 30px;
   justify-content: space-between;
   align-items: center;
   background-color: ${color.colorBlack};
