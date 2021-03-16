@@ -1,9 +1,11 @@
 // React
 import React from 'react';
-import ProductList from '../components/product-list/ProductList';
 
 // Data
 import { products } from '../data/products';
+
+// Components
+import ProductList from '../components/product-list/ProductList';
 
 interface Props {}
 
