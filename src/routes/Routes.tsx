@@ -19,13 +19,14 @@ interface Props {}
 const Routes: React.FC<Props> = () => {
   return (
     <Switch>
+      <Route exact path="/" component={Index} />
+
       <Route path="/buy" component={BuyRoutes} />
       <Route path="/orders" component={OrderRoutes} />
       <Route path="/admin" component={AdminRoutes} />
 
       <Route path="/products/:id" component={ProductDetail} />
       <Route path="/products" component={Products} />
-      <Route exact path="/" component={Index} />
 
       <Route path="*" component={PageNotFound} />
     </Switch>
