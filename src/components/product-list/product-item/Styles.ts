@@ -24,7 +24,6 @@ export const ProductItemStyled = styled.div`
 export const Top = styled.div`
   width: 200px;
   height: 200px;
-  background-color: red;
 
   & > img {
     width: 100%;
@@ -39,6 +38,7 @@ export const Bottom = styled.div`
 
   & > p {
     font-size: 24px;
+    color: ${color.colorPrimary};
   }
 
   & > span {
