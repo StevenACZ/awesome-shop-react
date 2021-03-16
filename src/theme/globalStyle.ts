@@ -9,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: teal;
   }
 `;
 
