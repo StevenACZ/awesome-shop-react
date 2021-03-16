@@ -10,10 +10,12 @@ import {
   Price,
   Stock,
   AddToCart,
+  Counter,
 } from './Styles';
 
 // Interfaces
 import { Product } from '../../data/products';
+import Button from '../button/Button';
 
 const ProductHero: React.FC<Product> = ({
   title,
@@ -42,11 +44,13 @@ const ProductHero: React.FC<Product> = ({
           </p>
         </Stock>
         <AddToCart>
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
+          <Counter>
+            <button>-</button>
+            <p>1</p>
+            <button>+</button>
+          </Counter>
 
-          <button>Add to cart</button>
+          <Button>Add to cart</Button>
         </AddToCart>
       </ProductDetail>
     </ProductHerosStyled>

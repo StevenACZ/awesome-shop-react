@@ -58,3 +58,14 @@ export const Stock = styled.div`
 export const AddToCart = styled.div`
   padding: 20px 0;
 `;
+
+export const Counter = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > button {
+    padding: 8px 16px;
+  }
+`;
