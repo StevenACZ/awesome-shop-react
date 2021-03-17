@@ -1,26 +1,48 @@
 // React
 import React from 'react';
+
+// React Router
 import { NavLink } from 'react-router-dom';
+import Button from '../../button/Button';
 
 // Styles
-import { HeaderStyled } from './Styles';
+import {
+  HeaderStyled,
+  Logo,
+  Search,
+  Navbar,
+  Links,
+  Profile,
+  HeaderContainer,
+} from './Styles';
 
 interface Props {}
 
 const Header: React.FC<Props> = () => {
   return (
     <HeaderStyled>
-      <NavLink exact to="/">
-        Home
-      </NavLink>
-      <NavLink to="/products">Products</NavLink>
-      <NavLink to="/buy/my-cart">Cart</NavLink>
-      <NavLink to="/buy/select-address">Select Address</NavLink>
-      <NavLink to="/buy/checkout">Checkout</NavLink>
-      <NavLink to="/orders/my-orders">Orders</NavLink>
-      <NavLink to="/admin/manage-products">Manage Products</NavLink>
-      <NavLink to="/admin/manage-orders">Manage Order</NavLink>
-      <NavLink to="/admin/manage-users">Manage Users</NavLink>
+      <HeaderContainer>
+        <Logo>
+          <NavLink to="/">
+            <h2>Awesome</h2>
+          </NavLink>
+        </Logo>
+
+        <Search>
+          <label>
+            <input type="text" placeholder="Search" />
+          </label>
+          <Button>Search</Button>
+        </Search>
+
+        <Navbar>
+          <Links></Links>
+          <Profile>
+            <Button>Sign in</Button>
+            <Button>Sign up</Button>
+          </Profile>
+        </Navbar>
+      </HeaderContainer>
     </HeaderStyled>
   );
 };
