@@ -8,6 +8,9 @@ import Routes from './routes/Routes';
 // Styles
 import GlobalStyle from './theme/globalStyle';
 
+// Fontawesome
+import './fontawesome';
+
 // Components
 import Layout from './components/layout/layout/Layout';
 
