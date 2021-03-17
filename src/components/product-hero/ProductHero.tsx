@@ -13,6 +13,9 @@ import {
   Counter,
 } from './Styles';
 
+// Fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 // Interfaces
 import { Product } from '../../data/products';
 import Button from '../button/Button';
@@ -45,9 +48,13 @@ const ProductHero: React.FC<Product> = ({
         </Stock>
         <AddToCart>
           <Counter>
-            <button>-</button>
+            <button>
+              <FontAwesomeIcon icon={['fas', 'minus']} size="xs" color="grey" />
+            </button>
             <p>1</p>
-            <button>+</button>
+            <button>
+              <FontAwesomeIcon icon={['fas', 'plus']} size="xs" color="grey" />
+            </button>
           </Counter>
 
           <Button>Add to cart</Button>
