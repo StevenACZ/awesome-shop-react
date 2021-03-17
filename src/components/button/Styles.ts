@@ -14,4 +14,5 @@ export const ButtonStyled = styled.button<Props>`
   background-color: ${color.colorPrimary};
   border-radius: 4px;
   color: ${color.colorWhite};
+  border: none;
 `;
