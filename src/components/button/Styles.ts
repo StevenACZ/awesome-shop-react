@@ -15,4 +15,10 @@ export const ButtonStyled = styled.button<Props>`
   border-radius: 4px;
   color: ${color.colorWhite};
   border: none;
+  outline: none;
+  transition: 400ms ease-out;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
 `;
