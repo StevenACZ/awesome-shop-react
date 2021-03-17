@@ -32,19 +32,3 @@ export const Form = styled.form`
     font-weight: 600;
   }
 `;
-
-export const LabelInput = styled.label`
-  display: block;
-  width: 100%;
-  margin-bottom: 14px;
-
-  & > p {
-    margin-bottom: 5px;
-  }
-
-  & > input {
-    outline: none;
-    width: 100%;
-    padding: 10px 0 10px 10px;
-  }
-`;
